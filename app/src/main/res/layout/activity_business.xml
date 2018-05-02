@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrrobot.customernew.activity.CustomerBusinessActivity">
+
+    <RelativeLayout
+        android:id="@+id/business_layout"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_above="@+id/menu_layout"
+        android:layout_alignParentLeft="true"
+        android:layout_below="@+id/title_layout"
+        android:background="@drawable/bg_business_activity"
+        >
+
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/salon_promo_container"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="@dimen/xl_margin"
+            android:layout_alignParentStart="true" />
+
+        <RelativeLayout
+            android:id="@+id/business_summary_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_margin="@dimen/medium_margin"
+            android:layout_below="@+id/salon_promo_container">
+
+            <ImageButton
+                android:id="@+id/icon_search"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:background="#00000000"
+                android:padding="@dimen/medium_padding"
+                app:srcCompat="@drawable/logo_metime" />
+
+            <android.support.v7.widget.SearchView
+                android:id="@+id/search_location"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/icon_search"
+                android:background="@drawable/bg_shape_corner" />
+
+
+
+        </RelativeLayout>
+
+        <android.support.v7.widget.RecyclerView
+            android:id="@+id/salon_container"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_below="@+id/business_summary_layout" />
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/menu_layout"
+        layout="@layout/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

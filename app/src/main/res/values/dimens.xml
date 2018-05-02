@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <dimen name="content_padding">5dp</dimen>
+    <dimen name="tile_padding">8dp</dimen>
+
+    <dimen name="menu_margin">2dp</dimen>
+
+    <dimen name="small_margin">3dp</dimen>
+    <dimen name="medium_margin">5dp</dimen>
+    <dimen name="large_margin">10dp</dimen>
+    <dimen name="xl_margin">15dp</dimen>
+
+    <dimen name="small_padding">3dp</dimen>
+    <dimen name="medium_padding">5dp</dimen>
+    <dimen name="large_padding">10dp</dimen>
+    <dimen name="xl_padding">15dp</dimen>
+
+    <dimen name="textsize">15sp</dimen>
+
+    <dimen name="card_content_text">14sp</dimen>
+    <dimen name="card_content_title">24sp</dimen>
+
+    <dimen name="card_padding">15dp</dimen>
+    <dimen name="card_margin">10dp</dimen>
+
+    <dimen name="card_action_margin">3dp</dimen>
+    <dimen name="card_action_padding">8dp</dimen>
+
+    <dimen name="card_stream_bottom_padding">90dp</dimen>
+</resources>

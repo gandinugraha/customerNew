@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/reviewer_img"
+            android:layout_width="70dp"
+            android:layout_height="70dp"
+            android:src="@mipmap/ic_launcher" />
+
+        <TextView
+            android:id="@+id/reviewer_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_toEndOf="@+id/reviewer_img"
+            android:layout_toRightOf="@+id/reviewer_img"
+            android:text="Customer Name"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/reviewer_duration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:text="10 minutes ago"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+        <TextView
+            android:id="@+id/reviewer_total_review"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/reviewer_name"
+            android:layout_alignLeft="@+id/reviewer_name"
+            android:textColor="@android:color/darker_gray"
+            android:layout_below="@+id/reviewer_name"
+            android:text="10 Reviews"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/reviewer_name"
+            android:layout_alignLeft="@+id/reviewer_name"
+            android:layout_below="@+id/reviewer_total_review">
+
+            <ImageView
+                android:id="@+id/ic_rating_1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_star_active"/>
+
+            <ImageView
+                android:id="@+id/ic_rating_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_rating_1"
+                android:src="@drawable/ic_star_active"/>
+
+            <ImageView
+                android:id="@+id/ic_rating_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_rating_2"
+                android:src="@drawable/ic_star_active"/>
+
+            <ImageView
+                android:id="@+id/ic_rating_4"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_rating_3"
+                android:src="@drawable/ic_star_active"/>
+
+            <ImageView
+                android:id="@+id/ic_rating_5"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toRightOf="@+id/ic_rating_4"
+                android:src="@drawable/ic_star_active"/>
+
+        </RelativeLayout>
+        <!--
+        <TextView
+            android:id="@+id/reviewer_rating"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignStart="@+id/reviewer_name"
+            android:layout_alignLeft="@+id/reviewer_name"
+            android:layout_below="@+id/reviewer_total_review"
+            android:text="Rated 4.5/5"
+            android:textColor="@android:color/darker_gray"
+            android:textAppearance="@style/Base.TextAppearance.AppCompat.Body1" />
+        -->
+        <ImageButton
+            android:id="@+id/expandArrow"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="14dp"
+            android:layout_marginRight="14dp"
+            android:src="@android:drawable/arrow_down_float"/>
+
+    </RelativeLayout>
+
+</android.support.v7.widget.CardView>

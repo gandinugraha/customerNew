@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:id="@+id/menu_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/bg_menu"
+        android:gravity="center">
+
+
+        <ImageButton
+            android:id="@+id/menu_location"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/large_padding"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_marginRight="@dimen/large_margin"
+            android:layout_toLeftOf="@+id/menu_salon"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_location"/>
+
+
+        <ImageButton
+            android:id="@+id/menu_salon"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/large_padding"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_marginRight="@dimen/large_margin"
+            android:layout_toLeftOf="@+id/menu_stylish"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_business" />
+
+
+        <ImageButton
+            android:id="@+id/menu_stylish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/large_padding"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_marginRight="@dimen/large_margin"
+            android:layout_centerHorizontal="true"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_stylish"/>
+
+        <ImageButton
+            android:id="@+id/menu_masterpiece"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/large_padding"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_marginRight="@dimen/large_margin"
+            android:layout_toRightOf="@+id/menu_stylish"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_masterpiece" />
+
+
+        <ImageButton
+            android:id="@+id/menu_profile"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="@dimen/large_padding"
+            android:layout_marginLeft="@dimen/large_margin"
+            android:layout_marginRight="@dimen/large_margin"
+            android:layout_toRightOf="@+id/menu_masterpiece"
+            android:background="@android:color/transparent"
+            android:src="@mipmap/ic_info"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>

@@ -1,0 +1,579 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <RelativeLayout
+            android:id="@+id/salon_info_layout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <RelativeLayout
+                android:id="@+id/relative1"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true">
+
+
+                    <ImageView
+                        android:id="@+id/salon_image"
+                        android:layout_width="70dp"
+                        android:layout_height="70dp"
+                        android:layout_above="@+id/layoutLogo"
+                        android:src="@drawable/men1"
+                        app:srcCompat="@mipmap/ic_launcher" />
+
+                    <TextView
+                        android:id="@+id/salon_name"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentTop="true"
+                        android:layout_toEndOf="@+id/salon_image"
+                        android:layout_toRightOf="@+id/salon_image"
+                        android:paddingLeft="@dimen/content_padding"
+                        android:paddingTop="@dimen/content_padding"
+                        android:text="Rudy Salon Kelapa Gading "
+                        android:textColor="@color/black"
+                        android:textSize="15dp"
+                        android:textStyle="bold" />
+
+                    <LinearLayout
+                        android:id="@+id/layoutLogo"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingRight="@dimen/content_padding"
+                        android:paddingTop="@dimen/content_padding"
+                        android:layout_below="@+id/phone_number">
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/logobni" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/logomandiri" />
+
+                        <ImageView
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            app:srcCompat="@drawable/logobca" />
+
+                    </LinearLayout>
+
+                    <ImageView
+                        android:id="@+id/review_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_below="@+id/salon_name"
+                        android:layout_toRightOf="@+id/salon_image"
+                        android:paddingLeft="@dimen/content_padding"
+                        app:srcCompat="@drawable/ic_reviewer" />
+
+                    <TextView
+                        android:id="@+id/salon_reviewer_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/salon_name"
+                        android:layout_toRightOf="@+id/review_icon"
+                        android:paddingLeft="@dimen/content_padding"
+                        android:text="89 reviewer"
+                        android:textColor="@color/black_50_opacity"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/salon_stylish_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/salon_name"
+                        android:layout_toRightOf="@+id/stylish_icon"
+                        android:paddingLeft="@dimen/content_padding"
+                        android:text="5 stylish"
+                        android:textColor="@color/black_50_opacity"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/review_icon"
+                        android:layout_toRightOf="@+id/salon_image"
+                        android:paddingLeft="@dimen/content_padding"
+                        android:text="Jl. Jelambar Barat No 32A Jakarta Barat  11460"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <TextView
+                        android:id="@+id/phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_below="@+id/address"
+                        android:layout_toRightOf="@+id/salon_image"
+                        android:paddingBottom="@dimen/content_padding"
+                        android:paddingLeft="@dimen/content_padding"
+                        android:text="(021) 56982245"
+                        android:textColor="@color/black"
+                        android:textSize="12dp" />
+
+                    <ImageView
+                        android:id="@+id/stylish_icon"
+                        android:layout_width="20dp"
+                        android:layout_height="18dp"
+                        android:layout_below="@+id/salon_name"
+                        android:layout_toRightOf="@+id/salon_reviewer_total"
+                        android:paddingLeft="@dimen/content_padding"
+                        app:srcCompat="@drawable/ic_total_stylish" />
+
+
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/header_info_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/relative1"
+                android:background="@drawable/bg_white">
+
+
+                <Button
+                    android:id="@+id/favorite"
+                    style="@style/Widget.AppCompat.Button.Borderless"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Favorite" />
+            </RelativeLayout>
+
+            //Opening hours
+            <LinearLayout
+                android:id="@+id/open_hours_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/header_info_layout"
+                android:background="@drawable/bg_white"
+                android:orientation="vertical"
+                android:padding="@dimen/content_padding"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/open_hours_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Opening Hours"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:textStyle="bold|italic" />
+
+                <GridLayout
+                    android:id="@+id/open_hours_lines"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="fill"
+                    android:columnCount="4"
+                    android:rowCount="4">
+
+                    <TextView
+                        android:id="@+id/monday_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Monday "
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/owner_salon_info_mon_open_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="08.00 - 22.00" />
+
+                    <TextView
+                        android:id="@+id/friday_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Friday  "
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/owner_salon_info_fri_open_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="08.00 - 22.00" />
+
+                    <TextView
+                        android:id="@+id/tuesday_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Tuesday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/owner_salon_info_tue_open_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="08.00 - 22.00" />
+
+                    <TextView
+                        android:id="@+id/saturday_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Saturday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/owner_salon_info_sat_open_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="08.00 - 22.00" />
+
+                    <TextView
+                        android:id="@+id/wednesday_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Wednesday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/owner_salon_info_wed_open_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="08.00 - 22.00" />
+
+                    <TextView
+                        android:id="@+id/sunday_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="2"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Sunday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/owner_salon_info_sun_open_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="3"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="08.00 - 22.00" />
+
+                    <TextView
+                        android:id="@+id/thursday_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Thursday"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/owner_salon_info_thu_open_hours"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="08.00 - 22.00" />
+
+                </GridLayout>
+
+            </LinearLayout>
+
+            //detail salon
+            <LinearLayout
+                android:id="@+id/detail_salon_profile_layout"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/open_hours_layout"
+                android:background="@drawable/bg_white"
+                android:orientation="vertical"
+                android:padding="@dimen/content_padding"
+                android:layout_alignParentLeft="true">
+
+                <TextView
+                    android:id="@+id/detail_salon_profile_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingBottom="5dp"
+                    android:paddingTop="5dp"
+                    android:text="Detail Salon Profile"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    tools:textStyle="bold|italic" />
+
+                <GridLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:columnCount="3"
+                    android:rowCount="5">
+
+                    <TextView
+                        android:id="@+id/phone_number_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Phone Number"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/salon_phone_number"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="(021) 7776266" />
+
+                    <TextView
+                        android:id="@+id/type_of_service_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:text="Type of Service"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/salon_type_of_service"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Beauty Salon" />
+
+                    <TextView
+                        android:id="@+id/average_cost_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Average Cost"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/salon_average_Cost"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="IDR 200.000" />
+
+                    <TextView
+                        android:id="@+id/speciality_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Speciality"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/salon_speciality"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill_horizontal"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Hair Coloring" />
+
+                    <TextView
+                        android:id="@+id/address_label"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="0"
+                        android:layout_columnSpan="1"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Address"
+                        android:textColor="@color/black" />
+
+
+                    <TextView
+                        android:id="@+id/salon_address"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_column="1"
+                        android:layout_columnSpan="2"
+                        android:layout_gravity="fill_horizontal"
+                        android:background="@drawable/bg_light_grey"
+                        android:paddingBottom="5dp"
+                        android:paddingLeft="5dp"
+                        android:paddingRight="5dp"
+                        android:paddingTop="5dp"
+                        android:text="Jl.Jelambar barat no 32" />
+
+                </GridLayout>
+            </LinearLayout>
+
+            <!--
+            <fragment
+                android:id="@+id/salon_map_location"
+                android:layout_below="@+id/detail_salon_profile_layout"
+                android:name="com.google.android.gms.maps.SupportMapFragment"
+                android:layout_width="match_parent"
+                android:layout_height="200dp" />
+            -->
+
+            <com.google.android.gms.maps.MapView
+                android:id="@+id/salon_map_location"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:layout_below="@+id/detail_salon_profile_layout" />
+
+        </RelativeLayout>
+
+    </ScrollView>
+
+</RelativeLayout>

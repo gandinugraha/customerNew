@@ -1,0 +1,364 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrrobot.customernew.activity.ProfileActivity">
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"/>
+
+
+    <ScrollView
+        android:id="@+id/scrol"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginBottom="394dp">
+
+        <RelativeLayout
+            android:id="@+id/title_layout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_above="@+id/menu_layout">
+
+            <ImageView
+                android:id="@+id/profile_img"
+                android:layout_width="120dp"
+                android:layout_height="120dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="20dp"
+                android:layout_marginTop="60dp" />
+
+            <ImageView
+                android:id="@+id/take_photo_img"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_alignBottom="@+id/profile_img"
+                android:layout_alignRight="@+id/profile_img"
+                android:src="@drawable/ic_takephoto" />
+
+            <TextView
+                android:id="@+id/profile_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_img"
+                android:layout_centerHorizontal="true"
+                android:text="Mr Kobochan"
+                android:textColor="@color/black" />
+
+            <TextView
+                android:id="@+id/profile_duration"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_name"
+                android:layout_centerHorizontal="true"
+                android:text="4 Months" />
+
+            <TextView
+                android:id="@+id/profile_review_total"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/profile_duration"
+                android:layout_centerHorizontal="true"
+                android:text="104 Reviews"
+                android:textColor="@color/deep_orange" />
+
+
+            <!--<GridLayout-->
+            <!--android:id="@+id/profile_additional_info_layout"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_below="@+id/profile_review_total"-->
+            <!--android:layout_marginBottom="20dp"-->
+            <!--android:layout_marginLeft="20dp"-->
+            <!--android:layout_marginRight="20dp"-->
+            <!--android:layout_marginTop="20dp"-->
+            <!--android:columnCount="3"-->
+            <!--android:rowCount="5">-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="Phone Number"-->
+            <!--android:textColor="@color/black"-->
+            <!--android:textSize="15sp"/>-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="2"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="(021) 56982245" />-->
+
+
+            <!--<View-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:background="@color/light_grey"-->
+            <!--android:padding="@dimen/medium_padding" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:background="@color/light_grey" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="Email"-->
+            <!--android:textColor="@color/black" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="2"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="fransiscus.rosida@gmail.com" />-->
+
+            <!--<View-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:background="@color/light_grey"-->
+            <!--android:padding="@dimen/medium_padding" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:background="@color/light_grey" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="Handphome"-->
+            <!--android:textColor="@color/black" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="2"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="08170015100" />-->
+
+            <!--<View-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:background="@color/light_grey"-->
+            <!--android:padding="@dimen/medium_padding"-->
+            <!--android:paddingBottom="@dimen/small_padding"-->
+            <!--android:paddingTop="@dimen/small_padding" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:background="@color/light_grey" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="Website"-->
+            <!--android:textColor="@color/black" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="2"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="-" />-->
+
+            <!--<View-->
+            <!--android:layout_width="100dp"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:background="@color/light_grey"-->
+            <!--android:padding="@dimen/medium_padding" />-->
+
+            <!--<View-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="1dp"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:background="@color/light_grey" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="0"-->
+            <!--android:layout_columnSpan="1"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="Address"-->
+            <!--android:textColor="@color/black" />-->
+
+            <!--<TextView-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_column="1"-->
+            <!--android:layout_columnSpan="2"-->
+            <!--android:layout_gravity="fill_horizontal"-->
+            <!--android:padding="@dimen/large_padding"-->
+            <!--android:paddingRight="@dimen/large_padding"-->
+            <!--android:paddingTop="@dimen/large_padding"-->
+            <!--android:text="Jl. Swadaya 2 no 1739A \n Jakarta Barat, 1146"-->
+            <!--android:textSize="15sp"-->
+            <!--android:textAlignment="gravity"/>-->
+
+            <!--</GridLayout>-->
+
+            <!--<Button-->
+            <!--android:id="@+id/bSearch"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentBottom="true"-->
+            <!--android:layout_below="@+id/profile_additional_info_layout"-->
+            <!--android:layout_centerHorizontal="true"-->
+            <!--android:drawableLeft="@android:drawable/ic_menu_edit"-->
+            <!--android:text="Edit"-->
+            <!--android:textAllCaps="false" />-->
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="353dp"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="260dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="390dp"
+            android:layout_above="@+id/menu_layout">
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:id="@+id/tablayout2">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    >
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Reviews" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Photos" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Follower" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Followed" />
+                </android.support.design.widget.TabLayout>
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/detail_fragment_layout"
+                android:layout_width="match_parent"
+                android:layout_height="350dp"
+                android:layout_alignParentLeft="true"
+                android:layout_alignParentStart="true"
+                android:layout_below="@+id/tablayout2">
+
+                <android.support.v4.view.ViewPager
+                    android:id="@+id/viewpagerprofil"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/bg_light_grey"
+                    app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/menu_layout"
+        layout="@layout/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

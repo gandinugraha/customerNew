@@ -1,0 +1,293 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrrobot.customernew.activity.HomeActivity">
+
+
+        <include
+            android:id="@+id/menu_layout"
+            layout="@layout/layout_menu_home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/icon_search"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="#00000000"-->
+            <!--android:padding="@dimen/medium_padding"-->
+            <!--app:srcCompat="@mipmap/metime_logo_baru" />-->
+
+        <!--<android.support.v7.widget.SearchView-->
+            <!--android:id="@+id/search_location"-->
+            <!--android:layout_width="match_parent"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_toLeftOf="@+id/icon_filter"-->
+            <!--android:layout_toRightOf="@+id/icon_search"-->
+            <!--android:background="@drawable/bg_shape_corner" />-->
+
+        <!--<ImageButton-->
+            <!--android:id="@+id/icon_filter"-->
+            <!--android:layout_width="wrap_content"-->
+            <!--android:layout_height="wrap_content"-->
+            <!--android:layout_alignParentEnd="true"-->
+            <!--android:layout_alignParentRight="true"-->
+            <!--android:layout_centerVertical="true"-->
+            <!--android:background="#00000000"-->
+            <!--android:padding="@dimen/medium_padding"-->
+            <!--app:srcCompat="@android:drawable/ic_menu_search" />-->
+
+
+    <ScrollView
+        android:id="@+id/scrolView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_alignParentTop="true"
+        android:layout_marginTop="50dp"
+        android:layout_above="@+id/menu_layout">
+
+        <RelativeLayout
+            android:id="@+id/layoutcontent"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@+id/search_layout">
+
+            <RelativeLayout
+                android:id="@+id/layout2"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/layout1"
+                android:layout_marginTop="@dimen/card_margin">
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical"
+                    android:layout_below="@+id/salon_phone_number"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentEnd="true"
+                    android:paddingRight="5dp">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        app:srcCompat="@drawable/img_mastercard"
+                        android:layout_marginRight="@dimen/xl_margin"/>
+
+                </LinearLayout>
+
+                <ImageView
+                    android:id="@+id/salon_image"
+                    android:layout_width="80dp"
+                    android:layout_height="80dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_centerVertical="true"
+                    app:srcCompat="@drawable/men1"
+                    android:layout_marginLeft="10dp"/>
+
+                <TextView
+                    android:id="@+id/salon_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentTop="true"
+                    android:layout_toEndOf="@+id/salon_image"
+                    android:layout_toRightOf="@+id/salon_image"
+                    android:paddingLeft="@dimen/content_padding"
+                    android:paddingTop="@dimen/content_padding"
+                    android:text="Rudy Salon Kelapa Gading "
+                    android:textColor="@color/black"
+                    android:textSize="12sp"
+                    android:textStyle="bold" />
+
+                <ImageView
+                    android:id="@+id/review_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:layout_below="@+id/salon_name"
+                    android:layout_toRightOf="@+id/salon_image"
+                    android:paddingLeft="@dimen/content_padding"
+                    app:srcCompat="@drawable/ic_reviewer" />
+
+                <TextView
+                    android:id="@+id/salon_reviewer_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/salon_name"
+                    android:layout_toRightOf="@+id/review_icon"
+                    android:paddingLeft="@dimen/content_padding"
+                    android:text="89 reviewer"
+                    android:textColor="@color/black_50_opacity"
+                    android:textSize="12sp" />
+
+                <ImageView
+                    android:id="@+id/stylish_icon"
+                    android:layout_width="20dp"
+                    android:layout_height="18dp"
+                    android:layout_below="@+id/salon_name"
+                    android:layout_toRightOf="@+id/salon_reviewer_total"
+                    android:paddingLeft="@dimen/content_padding"
+                    app:srcCompat="@drawable/ic_total_stylish" />
+
+                <TextView
+                    android:id="@+id/salon_stylish_total"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/salon_name"
+                    android:layout_toRightOf="@+id/stylish_icon"
+                    android:paddingLeft="@dimen/content_padding"
+                    android:text="5 stylish"
+                    android:textColor="@color/black_50_opacity"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/salon_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/review_icon"
+                    android:layout_toRightOf="@+id/salon_image"
+                    android:paddingLeft="@dimen/content_padding"
+                    android:text="Jl. Jelambar Barat No 32A Jakarta Barat  11460"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+                <TextView
+                    android:id="@+id/salon_phone_number"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/salon_address"
+                    android:layout_toEndOf="@+id/salon_image"
+                    android:layout_toRightOf="@+id/salon_image"
+                    android:paddingBottom="@dimen/content_padding"
+                    android:paddingLeft="@dimen/content_padding"
+                    android:text="(021) 56982245"
+                    android:textColor="@color/black"
+                    android:textSize="12sp" />
+
+
+            </RelativeLayout>
+
+
+
+            <RelativeLayout
+                android:id="@+id/layout1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/tablayout2"
+                android:layout_marginTop="15dp">
+
+                <TextView
+                    android:id="@+id/others"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginRight="17dp"
+                    android:text="See Others" />
+
+                <TextView
+                    android:id="@+id/promo"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginStart="16dp"
+                    android:text="Promotion" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/tablayout2">
+
+                <android.support.design.widget.TabLayout
+                    android:id="@+id/tabLayout1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    app:tabMode="scrollable">
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Beauty Salon" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Barber Salon" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Nilai Salon" />
+
+                    <android.support.design.widget.TabItem
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="Luky Salon" />
+                </android.support.design.widget.TabLayout>
+            </RelativeLayout>
+
+            <!--<RelativeLayout-->
+                <!--android:id="@+id/detail_fragment_layout"-->
+                <!--android:layout_width="match_parent"-->
+                <!--android:layout_height="match_parent"-->
+                <!--android:layout_alignParentLeft="true"-->
+                <!--android:layout_alignParentStart="true"-->
+                <!--android:layout_below="@+id/tablayout2">-->
+
+                <!--<android.support.v4.view.ViewPager-->
+                    <!--android:id="@+id/viewpagerprofil"-->
+                    <!--android:layout_width="match_parent"-->
+                    <!--android:layout_height="509dp"-->
+                    <!--android:background="@drawable/bg_light_grey"-->
+                    <!--app:layout_behavior="@string/appbar_scrolling_view_behavior" />-->
+
+
+
+            <!--</RelativeLayout>-->
+
+            <RelativeLayout
+                android:id="@+id/relativeHome"
+                android:layout_width="match_parent"
+                android:layout_height="370dp"
+                android:layout_below="@+id/layout2"
+                android:layout_marginTop="@dimen/xl_margin">
+
+
+                <android.support.v7.widget.RecyclerView
+                    android:id="@+id/recycleHome"
+                    android:layout_width="match_parent"
+                    android:layout_height="370dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:layout_alignParentTop="true" />
+            </RelativeLayout>
+
+        </RelativeLayout>
+
+
+    </ScrollView>
+
+
+    <include
+        android:id="@+id/menu_layout"
+        layout="@layout/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>

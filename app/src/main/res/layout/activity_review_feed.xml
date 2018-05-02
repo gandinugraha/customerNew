@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.mrrobot.customernew.activity.ReviewFeedActivity">
+
+
+    <include
+        android:id="@+id/title_layout"
+        layout="@layout/layout_review_feed"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true" />
+
+
+    <RelativeLayout
+        android:layout_below="@+id/title_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/relative_feed">
+
+        <ImageView
+            android:id="@+id/vh_stylish_image"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_alignBottom="@+id/vh_thursday_label"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentStart="true"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="5dp"
+            android:src="@drawable/stylish"/>
+
+        <TextView
+            android:id="@+id/vh_stylish_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toEndOf="@+id/vh_stylish_image"
+            android:layout_toRightOf="@+id/vh_stylish_image"
+            android:text="Andrew Tooy"
+            android:textStyle="bold|italic"
+            android:layout_marginTop="5dp"/>
+
+        <TextView
+            android:id="@+id/vh_mst_pieces_btn"
+            android:layout_width="wrap_content"
+            android:layout_height="35dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:text="10 Minutes ago"
+            android:textAllCaps="false"
+            android:textSize="13sp"
+            android:layout_marginRight="5dp"/>
+
+        <TextView
+            android:id="@+id/vh_monday_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/vh_stylish_name"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="3dp"
+            android:layout_toEndOf="@+id/vh_stylish_image"
+            android:layout_toRightOf="@+id/vh_stylish_image"
+            android:text="10 Reviews" />
+
+        <TextView
+            android:id="@+id/vh_tuesday_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignLeft="@+id/vh_monday_label"
+            android:layout_alignStart="@+id/vh_monday_label"
+            android:layout_below="@+id/vh_monday_label"
+            android:text="10 Months"
+            android:layout_marginTop="5dp" />
+
+        <TextView
+            android:id="@+id/vh_stylish"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/vh_stylish_image"
+            android:text="Awesome place for my hair style"
+            android:textSize="16dp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/vh_stylish_text"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="false"
+            android:layout_marginLeft="5dp"
+            android:layout_below="@+id/vh_stylish"
+            android:text="tes satu dua tiga empat. tempat yang menyenangkan dan sangat bagus sekali"
+            />
+
+
+
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/title_gambar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/relative_feed">
+
+        <ImageView
+            android:id="@+id/loc_stylish_img"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_marginLeft="7dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/loc_stylish_img2"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/loc_stylish_img"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+        <ImageView
+            android:id="@+id/loc_stylish_img3"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_toRightOf="@+id/loc_stylish_img2"
+            android:layout_marginLeft="10dp"
+            app:srcCompat="@mipmap/ic_launcher" />
+
+    </RelativeLayout>
+
+
+    <RelativeLayout
+        android:id="@+id/relativeHome"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@+id/title_gambar"
+        android:layout_above="@+id/menu_1">
+
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/home"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="8dp" />
+
+    </RelativeLayout>
+
+    <include
+        android:id="@+id/menu_1"
+        layout="@layout/layout_menu"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true" />
+
+</RelativeLayout>
